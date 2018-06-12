@@ -1,5 +1,36 @@
 package lt.balticatalents.lesson3;
 
+/**
+ Sukurti public klase CarMain su main methodu
+
+ po ja tame paciame faile sukurti klase Car su laukais:
+ String gearBox;
+ int maxSpeed;
+
+ sukurti get ir set metodus Car klaseje, kurie keistu
+ ir grazintu lauku reiksmes atitinkamai
+
+ setGearBox
+ setMaxSpeed
+
+ getGearbox()
+ getMaxSpeed()
+
+ sukurti Car klases konstruktorius su abiem parametrais, be parametru,
+ su vienu parametru (2 konstruktoriai)
+
+
+ Uzdavinys:
+ prideti klaseje Car laukeli name, kuriame bus saugomas automobilio pavadinimas
+
+ sukurti masyva is 5 skirtingu automobiliu
+ automobiliai gali tureti gearBox reiksme "manual" arba "automatic"
+ maxSpeed gali buti tik teigiamas skaicius
+
+ atspausdinti automobilio pavadinima su dydziausiu greiciu
+ suskaiciuoti automobilius ir atspasdinti kiek turi automatine ir mechanine pavaru deze
+ */
+
 public class CarMain {
     public static void main(String[] args) {
         Car car1 = new Car();
@@ -48,4 +79,3 @@ class Car {
         this.maxSpeed = maxSpeed;
     }
 }
-
