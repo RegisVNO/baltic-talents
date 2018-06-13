@@ -67,8 +67,10 @@ class Car {
         return gearBox;
     }
 
-    public void setGearBox(String gearBox) {
-        this.gearBox = gearBox;
+    public void setGearBox(String gearBox) {// manual arba automatic | equals
+        if (gearBox.equals("manual") || gearBox.equals("automatic")) {
+            this.gearBox = gearBox;
+        }
     }
 
     public int getMaxSpeed() {
@@ -76,6 +78,8 @@ class Car {
     }
 
     public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
+        if (maxSpeed > 0) {
+            this.maxSpeed = maxSpeed;
+        }
     }
 }
