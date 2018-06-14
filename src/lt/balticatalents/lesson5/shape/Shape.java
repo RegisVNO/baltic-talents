@@ -1,7 +1,7 @@
 package lt.balticatalents.lesson5.shape;
 
-abstract class Shape {
-    abstract double area();
+interface Shape {
+    double area();
 
-    abstract double perimeter();
+    double perimeter();
 }

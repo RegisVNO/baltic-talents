@@ -57,7 +57,7 @@ public class CarMain {
 class Car {
     final static int MIN_SPEED = 0;
     final static String MANUAL = "manual";
-    final static String AUTOMATIC = "automatic";
+    static final String AUTOMATIC = "automatic";
     static String staticName = "static";
 
     private String name;

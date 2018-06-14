@@ -1,6 +1,6 @@
-package lt.balticatalents.lesson5.shape;
+package lt.balticatalents.lesson6.shape;
 
-class Rectangle implements Shape {
+class Rectangle extends Shape {
     private double x;
     private double y;
 
@@ -21,11 +21,13 @@ class Rectangle implements Shape {
         this.y = 1;
     }
 
-    public double area() {
+    @Override
+    double area() {
         return x * y;
     }
 
-    public double perimeter() {
+    @Override
+    double perimeter() {
         return 2 * (x + y);
     }
 
